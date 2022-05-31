@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('parts/head.html')
+
+<body>
+	<div class="wrapper">
+		@include('parts/header.html')
+		<main class="main thank">
+			<section class="thanks">
+				<div class="thanks__container _container">
+					<h2 class="thanks__title">СПАСИБО ЗА ОБРАЩЕНИЕ!
+						МЫ СВЯЖЕМСЯ С ВАМИ
+						В БЛИЖАЙШЕЕ ВРЕМЯ.
+					</h2>
+					<div class="thanks__subtitle">Если этого не произошло, значит мы получили не правильный контакт. Пожалуйста,
+						оставьте заявку повторно.
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		@include('parts/footer.html')
+	</div>
+	@include('parts/modal.html')
+	@include('parts/_politic.html')
+
+	@include('parts/scripts.html')
+</body>
+
+</html>

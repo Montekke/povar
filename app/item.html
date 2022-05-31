@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('parts/head.html')
+
+<body>
+	<div class="wrapper">
+		@include('parts/header.html')
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container _container">
+				<div>
+					<a href="index.html">Главная </a>
+					/ Каталог
+				</div>
+			</div>
+		</div>
+		<main class="main">
+			@include('parts/item_1.html')
+			@include('parts/item_2.html')
+			@include('parts/item_3.html')
+		</main>
+
+		@include('parts/footer.html')
+	</div>
+	@include('parts/modal.html')
+	@include('parts/_politic.html')
+
+	@include('parts/scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<form class="needs-validation form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom2"
+	id="addcom2" onsubmit="return false">
+	<div class="bordered">
+		<div class="err" id="cerror2"></div>
+		<div class="form-in">
+			<div class="form-input">
+				<input type="text" class="form-control" name="name" placeholder="Введите ваше имя" required="">
+			</div>
+			<div class="form-input">
+				<input type="email" class="form-control" name="mail" placeholder="Введите ваш Email" required="">
+			</div>
+			<input type="hidden" name="from" value="ОСТАЛИСЬ ВОПРОСЫ?">
+			<div class="form-textarea">
+				<textarea class="form-control" placeholder="Введите ваш вопрос" name="text" id="" required></textarea>
+			</div>
+			<button onclick="doLoad2(document.getElementById('addcom2'))" class="main-btn">
+				Оставить заявку
+			</button>
+			<div class="form-check">
+				<input type="checkbox" class="check" checked="" id="check2">
+				<label class="form-check-label" for="check2 ">Даю согласие на обработку персональных данных в соответствии с <a
+						data-bs-toggle="modal" data-bs-target="#security-politics">политики конфеденциальности</a></label>
+			</div>
+		</div>
+	</div>
+</form>

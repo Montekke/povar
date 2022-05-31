@@ -1,0 +1,77 @@
+.form-check {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-top: 20px;
+	justify-content: center;
+	margin-left: 0;
+	padding-right: 0;
+	max-width: 337px;
+
+	input {
+		display: none;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	&-label {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		color: #000;
+		letter-spacing: 0.28px;
+		position: relative;
+		padding-left: 35px;
+		cursor: pointer;
+
+		&:before {
+			width: 20px;
+			height: 20px;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 2px;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0px;
+			bottom: 0;
+			margin: auto;
+			border-radius: 3px;
+			background-color: #ffe5aa;
+		}
+
+		&:after {
+			width: 10px;
+			height: 10px;
+			box-sizing: border-box;
+			background-image: url(../img/check.svg);
+			background-size: contain;
+			content: "";
+			position: absolute;
+			left: 5px;
+			top: 0px;
+			bottom: 0;
+			margin: auto;
+			opacity: 0;
+			transition: all 0.1s linear;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		a {
+			cursor: pointer;
+			color: inherit;
+			text-decoration: underline !important;
+
+			&:hover {
+				color: rgb(#000, 50%) !important;
+				text-decoration: underline !important;
+			}
+		}
+	}
+
+	input:checked + label:after {
+		opacity: 1;
+		transition: all 0.1s linear;
+	}
+}

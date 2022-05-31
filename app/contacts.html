@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('parts/head.html')
+
+<body>
+	<div class="wrapper">
+		@include('parts/header.html')
+
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs__container _container">
+					<div>
+						<a href="index.html">Главная </a>
+						/ Контакты
+					</div>
+				</div>
+			</div>
+			@include('parts/contact_1.html')
+		</main>
+
+		@include('parts/footer.html')
+	</div>
+	@include('parts/modal.html')
+	@include('parts/_politic.html')
+
+	@include('parts/scripts.html')
+</body>
+
+</html>

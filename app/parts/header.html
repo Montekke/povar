@@ -1,0 +1,57 @@
+<header class="header">
+	<div class="header__container _container">
+		<a href="index.html" class="header-logo">
+			<div class="header-logo__img">
+				<picture>
+					<source srcset="img/logo.webp" type="image/webp">
+					<img src="img/logo.png" width="94px" height="74px" alt="Логотип">
+				</picture>
+			</div>
+			<p class="header-logo__text">
+				Основы для чая и лимонада оптом от производителя
+			</p>
+		</a>
+		<nav data-da=".offcanvas-body, 992, 1" class="header__menu menu">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a href="index.html" class="menu__link">Главная</a>
+				</li>
+				<li class="menu__item">
+					<a href="catalog.html" class="menu__link">Каталог</a>
+				</li>
+				<li class="menu__item">
+					<a href="about.html" class="menu__link">О нас</a>
+				</li>
+				<li class="menu__item">
+					<a href="contacts.html" class="menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__contacts contacts">
+			<div class="contacts__phone">
+				<a href="tel:+79286692425" class="contacts__whatsapp">
+					<img src="img/whatsapp.png" alt="Whatsapp">
+					+7 (928) 669-24-25
+				</a>
+				<p class="contacts__work">
+					Ежедневно с 9:00 до 20:00
+				</p>
+			</div>
+			<button data-bs-toggle="modal" data-bs-target="#callback" class="contacts__button  main-btn main-btn_brown">
+				Заказать звонок
+			</button>
+		</div>
+		<button class="offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+			aria-controls="offcanvasRight">
+			@include('../parts/svg/offcanvas menu.html')
+		</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			<div class="offcanvas-header">
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+
+			</div>
+		</div>
+	</div>
+</header>
